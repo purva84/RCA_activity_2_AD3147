@@ -4,7 +4,7 @@ An end-to-end data science project demonstrating binary classification with **Lo
 
 ---
 
-## 📌 Executive Summary & Problem Context
+## Executive Summary & Problem Context
 
 Employee turnover incurs significant organizational costs—including recruitment latency, onboarding expenses, lost productivity, and institutional knowledge drain. In corporate talent management:
 - **False Negative (Missed Leaver):** The model predicts an employee will stay ($0$), but they resign ($1$). The company suffers replacement costs (typically 50%–200% of annual salary) and project disruption.
@@ -14,7 +14,7 @@ Employee turnover incurs significant organizational costs—including recruitmen
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 - **Source:** [IBM HR Analytics Employee Attrition & Performance Dataset (Kaggle)](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 - **Observations:** 1,470 employee records (35 raw features)
@@ -26,7 +26,7 @@ Employee turnover incurs significant organizational costs—including recruitmen
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```plaintext
 rca_activity_two/
@@ -47,7 +47,7 @@ rca_activity_two/
 
 ---
 
-## 🔬 Methodology & Workflow
+## Methodology & Workflow
 
 1. **Data Preprocessing & Cleaning:**
    - Identified and removed 4 zero-variance / non-informative columns: `EmployeeNumber`, `EmployeeCount`, `Over18`, `StandardHours`.
@@ -68,7 +68,7 @@ rca_activity_two/
 
 ---
 
-## 📈 Key Visualizations & Findings
+## Key Visualizations & Findings
 
 ### 1. Target Class Imbalance
 The dataset exhibits an 83.9% / 16.1% majority-to-minority distribution, demonstrating why standard accuracy is a misleading performance benchmark.
@@ -99,7 +99,7 @@ Employees earning below \$5,000/month combined with mandatory OverTime exhibit t
 
 ---
 
-## ⚖️ Threshold Optimization Comparison
+## Threshold Optimization Comparison
 
 | Metric | Default Threshold ($T = 0.5$) | Recommended HR Threshold ($T = 0.3$) |
 | :--- | :---: | :---: |
@@ -113,7 +113,7 @@ Employees earning below \$5,000/month combined with mandatory OverTime exhibit t
 
 ---
 
-## 🛡️ Ethical Considerations & Guardrails
+## Ethical Considerations & Guardrails
 
 1. **Prohibition of Autonomous Actions:** This model must **never** be used autonomously to make salary, promotion, disciplinary, or termination decisions.
 2. **Supportive Interventions Only:** Flagged flight risk indicates an opportunity for supportive career check-ins, workload adjustments, or mentorship.
@@ -121,7 +121,7 @@ Employees earning below \$5,000/month combined with mandatory OverTime exhibit t
 
 ---
 
-## 🚀 How to Run the Notebook
+## How to Run the Notebook
 
 ### Prerequisites
 Make sure you have Python 3.9+ installed.
