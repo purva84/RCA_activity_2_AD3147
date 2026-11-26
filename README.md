@@ -141,3 +141,5 @@ pip install numpy pandas matplotlib seaborn scikit-learn jupyter
 ```bash
 jupyter notebook activity2_logistic_regression.ipynb
 ```
+
+**Submission GitHub ID:** [complexiota](https://github.com/complexiota)
